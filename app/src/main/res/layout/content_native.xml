@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NativeActivity"
+    tools:showIn="@layout/activity_native">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_text1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_width="1280"
+            app:unit_height="720"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7D34" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_text2" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_width="1200"
+            app:unit_height="627"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7134" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_text3" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_width="800"
+            app:unit_height="1200"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7234" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_icon1_text1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_4to3_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7334" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_icon1_text2" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_4to3_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7434" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image3_text1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_4to3_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7534" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon1_text2" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_11to4_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7634" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image3_icon1_text2" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_16to9_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7734" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1_icon1_text2_button1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_1to1_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7834" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/image1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7934" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video1_image1_text1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7A34" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video1_image1_icon1_text2" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7B34" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video1_image1" />
+
+        <com.xy.sdk.View
+            android:id="@+id/native_view12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:unit_size="native_size"
+            app:unit_id="98738D91D3BB241458D3FAE5A5BF7C34" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
