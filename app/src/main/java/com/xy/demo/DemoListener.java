@@ -21,6 +21,11 @@ public class DemoListener implements Listener, VideoListener, DefaultCustomListe
     }
 
     @Override
+    public void onImpressionFailed() {
+        Log.d("DemoListener", "onImpressionFailed");
+    }
+
+    @Override
     public void onImpressionReceivedError(int errorCode, String description) {
         Log.d("DemoListener", "onImpressionReceivedError: " + errorCode + ":" + description);
     }
