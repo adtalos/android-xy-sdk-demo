@@ -3,14 +3,15 @@ package com.xy.demo;
 import android.content.Context;
 
 import com.bun.miitmdid.core.ErrorCode;
-import com.bun.miitmdid.core.IIdentifierListener;
 import com.bun.miitmdid.core.MdidSdkHelper;
-import com.bun.miitmdid.supplier.IdSupplier;
+import com.bun.supplier.IIdentifierListener;
+import com.bun.supplier.IdSupplier;
 import com.xy.sdk.SDK;
 
-public class MiitHelper implements IIdentifierListener {
+public class MsaHelper implements IIdentifierListener {
     public void getDeviceIds(Context cxt) {
-        switch (CallFromReflect(cxt)) {
+        int code = MdidSdkHelper.InitSdk(cxt, true, this);
+        switch (code) {
             case ErrorCode.INIT_ERROR_DEVICE_NOSUPPORT:
                 System.out.println("1008612 不支持的设备");
                 break;
@@ -29,10 +30,6 @@ public class MiitHelper implements IIdentifierListener {
         }
     }
 
-    private int CallFromReflect(Context cxt) {
-        return MdidSdkHelper.InitSdk(cxt, true, this);
-    }
-
     @Override
     public void OnSupport(boolean isSupport, IdSupplier _supplier) {
         if (_supplier == null) {
@@ -41,6 +38,5 @@ public class MiitHelper implements IIdentifierListener {
         String oaid = _supplier.getOAID();
         System.out.println("OAID: " + oaid);
         SDK.setOAID(oaid);
-        _supplier.shutDown();
     }
 }
