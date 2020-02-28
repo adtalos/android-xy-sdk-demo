@@ -65,3 +65,9 @@ fastlane/test_output
 fastlane/readme.md
 
 .DS_Store
+.idea/.name
+.idea/codeStyles/Project.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/vcs.xml
