@@ -1,9 +1,8 @@
 package com.xy.demo;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,7 +13,7 @@ import com.xy.sdk.SDK;
 public class MainActivity extends AppCompatActivity {
 
     // 插屏广告
-    private final Controller interstitial = new Controller("2EF810225D10260506CBB704C96C5325", Controller.INTERSTITIAL);
+    private final Controller interstitial = new Controller("C28BE5F062F476CC0C73C4F0ED333A72", Controller.INTERSTITIAL);
     // 激励视频广告
     private final Controller rewardedVideo = new Controller("527E187C5DEA600C35309759469ADAA8", Controller.REWARDED_VIDEO);
 
