@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // 请求广告 SDK 需要的权限
-        SDK.requestPermissions(this);
+        // 下面注释的语句仅用于演示请求权限
+        // SDK.requestPermissions(this);
 
         Button bannerTestButton = findViewById(R.id.banner_test_button);
         bannerTestButton.setOnClickListener(new View.OnClickListener() {
