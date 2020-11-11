@@ -3,10 +3,8 @@ package com.xy.demo;
 import android.app.Application;
 import android.content.pm.ActivityInfo;
 
-import com.bun.miitmdid.core.JLibrary;
 import com.xy.sdk.Controller;
 import com.xy.sdk.LandingPageActivity;
-import com.xy.sdk.SDK;
 
 public class DemoAppliaction extends Application {
     private final MsaHelper helper = new MsaHelper();
@@ -17,7 +15,6 @@ public class DemoAppliaction extends Application {
     public void onCreate() {
         super.onCreate();
         try {
-            JLibrary.InitEntry(this.getApplicationContext());
             helper.getDeviceIds(this.getApplicationContext());
 
             // 设置广告落地页显示导航按钮工具栏
