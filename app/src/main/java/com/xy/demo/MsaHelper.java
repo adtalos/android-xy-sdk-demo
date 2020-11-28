@@ -4,13 +4,13 @@ import android.content.Context;
 
 import com.bun.miitmdid.core.ErrorCode;
 import com.bun.miitmdid.core.MdidSdkHelper;
-import com.bun.supplier.IIdentifierListener;
-import com.bun.supplier.IdSupplier;
+import com.bun.miitmdid.interfaces.IIdentifierListener;
+import com.bun.miitmdid.interfaces.IdSupplier;
 import com.xy.sdk.SDK;
 
 public class MsaHelper implements IIdentifierListener {
     public void getDeviceIds(Context cxt) {
-        int code = MdidSdkHelper.InitSdk(cxt, true, this);
+        int code = CallFromReflect(cxt);
         switch (code) {
             case ErrorCode.INIT_ERROR_DEVICE_NOSUPPORT:
                 System.out.println("1008612 不支持的设备");
@@ -28,6 +28,10 @@ public class MsaHelper implements IIdentifierListener {
                 System.out.println("1008615 反射调用出错");
                 break;
         }
+    }
+
+    private int CallFromReflect(Context cxt){
+        return MdidSdkHelper.InitSdk(cxt, true, this);
     }
 
     @Override
