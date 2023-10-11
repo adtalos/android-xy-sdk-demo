@@ -7,7 +7,6 @@ import com.xy.sdk.Controller;
 import com.xy.sdk.LandingPageActivity;
 
 public class DemoAppliaction extends Application {
-    private final MsaHelper helper = new MsaHelper();
     // 开屏广告
     private final Controller splash = new Controller("5C3DD65A809B08A2D6CF3DEFBC7E09C7", Controller.SPLASH);
 
@@ -15,8 +14,6 @@ public class DemoAppliaction extends Application {
     public void onCreate() {
         super.onCreate();
         try {
-            helper.getDeviceIds(this.getApplicationContext());
-
             // 设置广告落地页显示导航按钮工具栏
             LandingPageActivity.setDisplayActionBarEnabled(true);
 

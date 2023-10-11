@@ -1,11 +1,14 @@
 package com.xy.demo;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class BannerActivity extends AppCompatActivity {
+import com.xy.sdk.SDK;
 
+public class BannerActivity extends AppCompatActivity {
     private com.xy.sdk.View topBannerView;
     private com.xy.sdk.View bottomBannerView;
 
@@ -29,6 +32,8 @@ public class BannerActivity extends AppCompatActivity {
         bottomBannerView.setListener(DemoListener.instance);
         // 手动加载广告
         bottomBannerView.load("96753DCF925E8DC7C105B3D3ED1138EA");
+        TextView textContent = findViewById(R.id.text_content);
+        textContent.setText("oaid: " + SDK.getOAID());
     }
 
     @Override
