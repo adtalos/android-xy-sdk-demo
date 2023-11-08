@@ -33,7 +33,8 @@ public class BannerActivity extends AppCompatActivity {
         // 手动加载广告
         bottomBannerView.load("96753DCF925E8DC7C105B3D3ED1138EA");
         TextView textContent = findViewById(R.id.text_content);
-        textContent.setText("oaid: " + SDK.getOAID());
+        textContent.setText("oaid: " + SDK.getOAID() + "\n" +
+                "gaid: " + SDK.getGAID());
     }
 
     @Override
