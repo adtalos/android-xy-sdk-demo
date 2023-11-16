@@ -28,7 +28,8 @@ public class DemoAppliaction extends Application {
                     .setKeywords("demo", "test")
                     .build());
             SDK.setPrivacy(Privacy.newBuilder()
-                    .setPersonalizedRecommendation(PrivacyStatus.AUTHORIZED)
+                    .setCOPPA(PrivacyStatus.AUTHORIZED)
+                    .setCCPA(PrivacyStatus.AUTHORIZED)
                     .build());
             // 设置广告落地页显示导航按钮工具栏
             LandingPageActivity.setDisplayActionBarEnabled(true);
